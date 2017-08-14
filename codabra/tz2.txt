@@ -1,0 +1,4 @@
+Итак, предлагаю вам выполнить вторую часть тестового задания. Думаю это вам будет даже интересно =)
+ 
+Описание задачи то же, но теперь нужно использовать следующие инструменты - Klein router (https://github.com/klein/klein.php) и Idiorm (https://github.com/j4mie/idiorm).
+Подключать их к проекту следует через composer (http://getcomposer.org/). Инструкции по подключению пакетов можете также найти на packagist.org (пример https://puu.sh/tQNWp/f5da9a4177.png).

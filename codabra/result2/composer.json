@@ -1,0 +1,13 @@
+{
+    "name": "andrey/closedWebsite",
+    "require": {
+        "klein/klein": "^2.1",
+        "j4mie/idiorm": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Andrey\\": "andrey/"
+        }
+    },
+    "minimum-stability": "stable"
+}
