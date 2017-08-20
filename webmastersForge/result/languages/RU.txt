@@ -1,0 +1,42 @@
+register Зарегистрировать аккаунт
+registerShort Регистрация
+registerButt Зарегистрироваться
+
+auth Войти в аккаунт
+authShort Войти
+
+profile Профиль
+emailShort e-mail
+
+loadImage Загрузить изображение
+
+login Логин 
+loginPH латиница и цифры, не менее 2-х символов
+loginErrReq пожалуйста, заполните поле
+loginErrCheck допустимы: латиница, цифры; 2-32 символов
+loginErrDup пожалуйста, попробуйте другой логин
+
+email Ваш e-mail
+emailPH Ваш e-mail
+emailErrCheck неправильно указан
+emailErrDup аккаунт с указанной электроной почтой уже зарегистрирован
+
+password Пароль
+passwordPH от 6 символов
+passwordErrReq пожалуйста, заполните поле
+passwordErrCheck от 6 символов - пожалуйста попробуйте изменить
+
+password2 Подтверждение пароля
+password2PH подтверждение пароля
+password2ErrReq пожалуйста, заполните поле
+password2ErrCheck от 6 символов - пожалуйста попробуйте изменить
+
+passwordCompareErr пароли не совпадают
+
+authLoginPH Ваш логин
+authPasswordPH Ваш пароль
+authErr неверный логин, либо пароль
+
+hello Привет,
+
+logout Выйти

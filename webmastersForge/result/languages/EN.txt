@@ -1,0 +1,44 @@
+register Sign up
+registerShort Register
+registerButt Register
+
+auth Sign in
+authShort Log in
+
+profile Profile
+emailShort e-mail
+
+loadImage Load image
+
+login Login
+loginPH letters, numbers, not less than 2 characters
+loginErrReq please enter to continue
+loginErrCheck allowed only letters, numbers; 2-32 characters
+loginErrDup please try use another username
+
+email Your e-mail
+emailPH Your e-mail
+emailErrCheck incorrect e-mail
+emailErrDup this e-mail in our website already registered
+
+password Password
+passwordPH more than 6 characters
+passwordErrReq  please enter your password to continue
+passwordErrCheck must more than 6 characters - please try to change
+
+password2 Confirm password
+password2PH confirm password
+password2ErrReq  please enter confirm password to continue
+password2ErrCheck must more than 6 characters - please try to change
+
+passwordCompareErr passwords are not the same
+
+authLoginPH Your login
+authPasswordPH Your password
+authErr login or password is incorrect
+
+hello Hello,
+
+logout Logout
+
+

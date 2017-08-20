@@ -1,0 +1,22 @@
+.text-danger{
+    display: block;
+    margin:1px 0px 0 0px  ; 
+    width:200%
+}
+
+
+.form-group{
+    margin-bottom:6px ; 
+}
+
+body.profile .form-group>label{
+    width:50%
+}
+
+body.profile .form-group>div{
+    padding-top:7px;
+}
+
+body.profile .form-group>label{
+    width:50%
+}

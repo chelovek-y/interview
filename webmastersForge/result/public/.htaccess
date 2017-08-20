@@ -1,0 +1,26 @@
+AddDefaultCharset utf-8
+
+<Filesmatch ".(php|html|htm)$">
+    order deny,allow
+    deny from all
+</Filesmatch>
+<Filesmatch "^(index.php)">
+    order allow,deny
+    allow from all
+</Filesmatch>
+<Filesmatch "^index2.php">
+    order deny,allow
+    allow from all
+</Filesmatch>
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?view=$1 [L,QSA]
+
+
+
+
+
+
