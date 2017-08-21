@@ -14,7 +14,20 @@ class Model
         $this->includeLibs();
     }
     
-    
+
+    public function sets()
+    {
+        ini_set('default_charset', 'UTF-8');
+        session_start();
+        
+        $this->db = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+        
+        if (mysqli_connect_errno()) { 
+            printf("Подключение к серверу MySQL невозможно. Код ошибки: %s\n", mysqli_connect_error()); 
+            exit; 
+        }
+
+    ;}
 
     public function dirs()
     {	
@@ -59,20 +72,6 @@ class Model
             'image' => $fileMove,
         );
     }
-    
-    public function logout(){
-        unset($_SESSION['user']);
-    }
-    
-    public function userToSession($login, $email, $image){
-        $_SESSION['user']=[
-            'login'=>$login,
-            'email'=>$email,
-            'image'=>$image,
-        ];
-    }	
-    
-
 
     public function login($login, $password)
     {
@@ -98,7 +97,6 @@ class Model
         } 
     
     }
-
     
     
     public function register($login, $email, $password, $password2){
@@ -122,6 +120,20 @@ class Model
         
     }
     
+    
+    public function logout(){
+        unset($_SESSION['user']);
+    }
+    
+    
+    public function userToSession($login, $email, $image){
+        $_SESSION['user']=[
+            'login'=>$login,
+            'email'=>$email,
+            'image'=>$image,
+        ];
+    }	
+    
     public function checkFields($login, $email, $password, $password2){
       
         $this->password=$password;
@@ -133,6 +145,7 @@ class Model
             if ($error) {$errors[$field]=$error;} ;
         }
         return $errors;
+        
     }
     
     public function checkField($field, $fieldVal, $check){
@@ -218,20 +231,6 @@ class Model
         ;}
         return $phrases;
     }
-
-    public function sets()
-    {
-        ini_set('default_charset', 'UTF-8');
-        session_start();
-        
-        $this->db = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-        
-        if (mysqli_connect_errno()) { 
-            printf("Подключение к серверу MySQL невозможно. Код ошибки: %s\n", mysqli_connect_error()); 
-            exit; 
-        }
-
-    ;}
 
 
     public function includeLibs(){	
