@@ -222,7 +222,6 @@ class Model
     public function sets()
     {
         ini_set('default_charset', 'UTF-8');
-        header("Content-type: text/html; charset=UTF-8");
         session_start();
         
         $this->db = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
